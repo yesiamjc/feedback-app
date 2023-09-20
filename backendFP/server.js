@@ -7,7 +7,7 @@ const FURL=process.env.FRONT_URL;
 
 // CORS configuration
 app.use(cors({
-  origin: "https://vercel.com/yesiamjc/feedback-app-client", // Replace with the URL of your frontend
+  origin: FURL, // Replace with the URL of your frontend
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true, // Enable cookies and other credentials
 }));
